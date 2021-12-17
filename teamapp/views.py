@@ -39,7 +39,7 @@ def hello(request):
         'isGreatFortune' : isGreatFortune,
         'fortune' : fortuneMessage,
     }
-    return render(request, 'blog/hello.html', data)
+    return render(request, 'teamapp/hello.html', data)
 
 def redirect_test(request):
     return redirect(hello)
