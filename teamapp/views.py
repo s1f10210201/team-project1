@@ -14,14 +14,14 @@ def index(request):
     
     if ('sort' in request.GET):
         if request.GET['sort'] == 'like':
-            articles = Article.objects.order_by('-like')
+            article = Article.objects.order_by('-like')
         else:
-            articles = Article.objects.order_by('-posted_at')
+            article = Article.objects.order_by('-posted_at')
     else:
-        articles = Article.objects.order_by('-posted_at')
+        article = Article.objects.order_by('-posted_at')
 
     context = {
-        "articles": articles
+        "articles": article
     }
     
     return render(request, 'teamapp/index.html', context)
