@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.http import Http404, JsonResponse
 from django.utils import timezone
 import random
-from blog.models import Article, Comment
+from teamapp.models import Article, Comment
 
 # Create your views here.
 def index(request):
