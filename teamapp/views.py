@@ -21,7 +21,7 @@ def index(request):
         article = Article.objects.order_by('-posted_at')
 
     context = {
-        "articles": article
+        "article": article
     }
     
     return render(request, 'teamapp/index.html', context)
