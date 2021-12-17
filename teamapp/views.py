@@ -58,7 +58,7 @@ def detail(request, article_id):
         'article': article,
         'comments': article.comments.order_by('-posted_at')
     }
-    return render(request, "blog/detail.html", context)
+    return render(request, "teamapp/detail.html", context)
 
 def update(request, article_id):
     try:
