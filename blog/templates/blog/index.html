@@ -2,14 +2,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Index page</title>
     <meta charset="UTF-8">
-    <meta name="author" content="INIAD">
     <link href="{% static 'blog/css/default.css' %}" rel="stylesheet">
-    <script type="text/javascript" src="{% static 'blog/js/index.js' %}" ></script>
   </head>
   <body>
-    <div id="header">
+    <div id = "header">
       <img src="{% static 'blog/img/iniad.png' %}" alt="Logo">
     </div>
     <h1>Django Sample Application</h1>
@@ -28,30 +25,21 @@
         <button type="submit">Submit</button>
       </div>
     </form>
-    <br>
 
-    <div>
-  	  <a href="{% url 'index' %}?sort=date">Sort by Date</a> | 
-      <a href="{% url 'index' %}?sort=like">Sort by Like</a>
-	  </div>
-    
-    {% if article %}
+    <br>
+    {% if articles %}
     {% for article in articles %}
     <div class="text">
-      <h2><a href="{% url 'detail' article.id %}">{{  article.title }}</a></h2>
+      <h2></h2><a href="{% url 'detail' article.id %}">{{ article.title }}</a>
       <small>[{{ article.posted_at }}]</small>
       <div>
-        <a href="" onclick="like({{article.id}});">
-          Like: <span id="like{{article.id}}">{{ article.like }}</span>
-        </a>
+        {{ article.body | linebreaksbr}}
       </div>
-      <div>
-        {{ article.body |linebreaksbr }}
-      </div>
-    </div>
+    </div> 
     {% endfor %}
     {% else %}
     <p>No article.</p>
     {% endif %}
+  
   </body>
 </html>
