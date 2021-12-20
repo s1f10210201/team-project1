@@ -35,7 +35,7 @@
       <a href="{% url 'index' %}?sort=like">Sort by Like</a>
 	  </div>
     
-    {% if articles %}
+    {% if article %}
     {% for article in articles %}
     <div class="text">
       <h2><a href="{% url 'detail' article.id %}">{{  article.title }}</a></h2>
