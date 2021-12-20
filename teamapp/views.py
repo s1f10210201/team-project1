@@ -4,3 +4,6 @@ from django.http import HttpResponse
 # Create your views here.
 def index(request):
     return render(request, 'teamapp/index.html')
+
+def update(request, article_id):
+	return HttpResponse("article_id: {}".format(article_id))
