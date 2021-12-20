@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.http import Http404, JsonResponse
 from django.utils import timezone
 import random
-from teamapp.models import Article, Comment
+from blog.models import Article, Comment
 
 # Create your views here.
 def index(request):
@@ -14,17 +14,17 @@ def index(request):
     
     if ('sort' in request.GET):
         if request.GET['sort'] == 'like':
-            article = Article.objects.order_by('-like')
+            articles = Article.objects.order_by('-like')
         else:
-            article = Article.objects.order_by('-posted_at')
+            articles = Article.objects.order_by('-posted_at')
     else:
-        article = Article.objects.order_by('-posted_at')
+        articles = Article.objects.order_by('-posted_at')
 
     context = {
-        "article": article
+        "articles": articles
     }
     
-    return render(request, 'teamapp/index.html', context)
+    return render(request, 'blog/index.html', context)
 
 def hello(request):
     messages = ['Great Fortune!', 'Small Fortune', 'Bad Fortune..']
@@ -39,7 +39,7 @@ def hello(request):
         'isGreatFortune' : isGreatFortune,
         'fortune' : fortuneMessage,
     }
-    return render(request, 'teamapp/hello.html', data)
+    return render(request, 'blog/hello.html', data)
 
 def redirect_test(request):
     return redirect(hello)
@@ -58,7 +58,7 @@ def detail(request, article_id):
         'article': article,
         'comments': article.comments.order_by('-posted_at')
     }
-    return render(request, "teamapp/detail.html", context)
+    return render(request, "blog/detail.html", context)
 
 def update(request, article_id):
     try:
