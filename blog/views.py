@@ -24,7 +24,7 @@ def index(request):
         "articles": articles
     }
     
-    return render(request, 'blog/index.html', context)
+    return render(request, 'blog/index.html')
 
 def hello(request):
     messages = ['Great Fortune!', 'Small Fortune', 'Bad Fortune..']
