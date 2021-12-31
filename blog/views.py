@@ -74,7 +74,7 @@ def update(request, article_id):
     context = {
         'article': article
     }
-    return render(request, "blog/edit.html", context)
+    return render(request, "blog/edit.html",context)
 
 def delete(request, article_id):
     try:
