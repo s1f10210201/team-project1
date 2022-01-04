@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-
+    background-color: rgb(137, 181, 231);
 }
 
 h1 {
@@ -8,7 +8,7 @@ h1 {
 }
 
 #header {
-    background-color: #1f24bb;
+    background-image: url("https://cdn-ak2.f.st-hatena.com/images/fotolife/m/mikimiho2013/20010318/20010318192050.jpg");
     padding: 10px 20px 10px 20px;
     height: 300px;
 }
