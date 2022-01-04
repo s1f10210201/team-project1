@@ -17,9 +17,7 @@
     <h1>　　----------------------------------東洋大学学食レビュー---------------------------------</h1>
     <p>                        東洋大学学食リスト                        </p>
     <form action="{% url 'index' %}" method="post">
-    <div class="ttl-line">区切り線</div>
     <div class="box-cla_foods">
-      <p class="txt-foods" id="anchorniku">学食リスト</p>
       <ul class="column col7 sp2 clearfix">
         <li>
           <a href="/recipe/cla_foods/niku/01.html">
@@ -163,7 +161,7 @@
         </li>
       </ul>
     </div>
-    <div class="ttl-line">区切り線</div>
+    <div class="ttl-line"></div>
       {% csrf_token %}
       <div>
         <label for="titleInput">メニュー名</label><br>
