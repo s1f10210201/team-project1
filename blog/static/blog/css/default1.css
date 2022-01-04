@@ -1,14 +1,14 @@
 body {
     font-family: sans-serif;
+
 }
 
 h1 {
-    border-bottom: solid 1px #252bdb;
-
+    border-bottom: solid 1px #a4a5cf;
 }
 
 #header {
-    background-color: #17194c;
+    background-color: #a9aac4;
     padding: 10px 20px 10px 20px;
     height: 40px;
 }
