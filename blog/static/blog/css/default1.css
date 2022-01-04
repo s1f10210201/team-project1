@@ -43,3 +43,13 @@ h2 {
     padding: 0px 10px 0px 10px;
     border-left: solid 4px #17194c;
 }
+ul.column.col7 li{
+    width: 13%;
+    margin-right: 1.5%;
+    float: left;
+  }
+  ul.column.col7 li:nth-child(7n){
+    margin-right: 0;
+  }
+
+  
