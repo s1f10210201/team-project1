@@ -4,17 +4,19 @@ body {
 }
 
 h1 {
-    border-bottom: solid 1px #a4a5cf;
+    border-bottom: solid 1px #2d2e74;
 }
 
 #header {
-    background-color: #a9aac4;
+    background-color: #1f24bb;
     padding: 10px 20px 10px 20px;
-    height: 40px;
+    height: 300px;
 }
 
 #header img {
+    padding: 0px 300px 1000px 550px;
     height: 100%;
+
 }
 
 #titleInput {
