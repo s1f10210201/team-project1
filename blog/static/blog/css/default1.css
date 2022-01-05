@@ -1,10 +1,12 @@
 body {
     font-family: sans-serif;
     background-color: rgb(137, 181, 231);
+    margin: 40px 100px 40px 100px;
 }
 
 h1 {
     border-bottom: solid 1px #2d2e74;
+    text-align: center;
 }
 
 
@@ -15,9 +17,8 @@ h1 {
 }
 
 #header img {
-    padding: 0px 300px 1000px 550px;
+    padding: 0px 550px 1000px 350px;
     height: 100%;
-
 }
 
 #titleInput {
@@ -54,11 +55,21 @@ ul.column.col7 li:nth-child(7n){
 }
 .ttl-line {
     border-bottom: solid 1px #2d2e74;
-
 }
 
 p{
     padding: 0px 10px 0px 10px;
 }
 
+.column {
+    display: inline-block;
+}
 
+li {
+    display: inline-block;
+}
+
+.column-text-ttl-center {
+    text-align: right;
+    font-size: 50%;
+}
