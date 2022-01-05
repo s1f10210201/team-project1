@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Index page</title>
+    <title>ホーム</title>
     <meta charset="UTF-8">
     <meta name="author" content="INIAD">
     <link href="{% static 'blog/css/default1.css' %}" rel="stylesheet">
@@ -168,14 +168,14 @@
       {% csrf_token %}
       <div>
         <label for="titleInput">メニュー名</label><br>
-        <input id="titleInput" name="title" type="text" placeholder="Input title">
+        <input id="titleInput" name="title" type="text" placeholder="メニュー名を入力してください">
       </div>
       <div>
         <label for="textInput">感想</label><br>
-        <textarea id="textInput" name="text" rows="3"></textarea>
+        <textarea id="textInput" name="text" rows="3" placeholder="感想を入力してください"></textarea>
       </div>
       <div>
-        <button type="submit">投稿</button>
+        <button type="submit">送信</button>
       </div>
     </form>
     <br>
@@ -198,7 +198,7 @@
     </div>
     {% endfor %}
     {% else %}
-    <p>No article.</p>
+    <p>記事がありません</p>
     {% endif %}
   </body>
 </html>

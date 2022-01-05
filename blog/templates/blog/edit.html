@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>    
-    <title>Edit page</title>
+    <title>{{article.title }} の編集</title>
     <meta charset="UTF-8">
     <meta name="author" content="INIAD">
     <link href="{% static 'blog/css/default1.css' %}" rel="stylesheet">
@@ -11,20 +11,20 @@
     <div id="header">
       <img src="{% static 'blog/img/iniad.png' %}" alt="Logo">
     </div>
-    <h1 >Edit article</h1>
+    <h1>編集</h1>
     <form action="{% url 'update' article.id %}" method="post">
       {% csrf_token %}
       <div>
-        <label for="titleInput">Title</label><br>
+        <label for="titleInput">メニュー名</label><br>
         <input id="titleInput" name="title" type="text"
-          placeholder="Input title" value="{{ article.title }}">
+          placeholder="メニュー名を入力してください" value="{{ article.title }}">
       </div>
       <div>
-        <label for="textInput">Text</label><br>
-        <textarea id="textInput" name="text" rows="3">{{ article.body }}</textarea>
+        <label for="textInput">感想</label><br>
+        <textarea id="textInput" name="text" rows="3" placeholder="感想を入力してください">{{ article.body }}</textarea>
       </div>
       <div>
-        <button type="submit">Submit</button>
+        <button type="submit">送信</button>
       </div>
     </form>
   </body>
