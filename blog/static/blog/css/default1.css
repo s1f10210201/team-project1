@@ -7,6 +7,7 @@ h1 {
     border-bottom: solid 1px #2d2e74;
 }
 
+
 #header {
     background-image: url("https://cdn-ak2.f.st-hatena.com/images/fotolife/m/mikimiho2013/20010318/20010318192050.jpg");
     padding: 10px 20px 10px 20px;
@@ -57,5 +58,5 @@ ul.column.col7 li:nth-child(7n){
 }
 
 p{
-    
+    padding: 0px 10px 0px 10px;
 }
