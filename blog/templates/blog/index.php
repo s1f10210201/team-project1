@@ -1,11 +1,13 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ホーム</title>
     <meta charset="UTF-8">
     <meta name="author" content="INIAD">
     <link href="{% static 'blog/css/default1.css' %}" rel="stylesheet">
+
+    <title>ホーム</title>
     <script type="text/javascript" src="{% static 'blog/js/index.js' %}" ></script>
   </head>
   <body>

@@ -1,11 +1,13 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ article.title }} の詳細</title>
     <meta charset="UTF-8">
     <meta name="author" content="INIAD">
     <link href="{% static 'blog/css/default1.css' %}" rel="stylesheet">
+
+    <title>{{ article.title }} の詳細</title>
   </head>
   <body>
     <div id="header">

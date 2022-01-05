@@ -25,7 +25,7 @@ def index(request):
         
     }
     
-    return render(request, 'blog/index.html')
+    return render(request, 'blog/index.php')
 
 def hello(request):
     messages = ['Great Fortune!', 'Small Fortune', 'Bad Fortune..']
@@ -40,7 +40,7 @@ def hello(request):
         'isGreatFortune' : isGreatFortune,
         'fortune' : fortuneMessage,
     }
-    return render(request, 'blog/hello.html', data)
+    return render(request, 'blog/hello.php', data)
 
 def redirect_test(request):
     return redirect(hello)
@@ -59,7 +59,7 @@ def detail(request, article_id):
         'article': article,
         'comments': article.comments.order_by('-posted_at')
     }
-    return render(request, "blog/detail.html", context)
+    return render(request, "blog/detail.php", context)
 
 def update(request, article_id):
     try:
@@ -75,7 +75,7 @@ def update(request, article_id):
     context = {
         'article': article
     }
-    return render(request, "blog/edit.html",context)
+    return render(request, "blog/edit.php",context)
 
 def delete(request, article_id):
     try:
