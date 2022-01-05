@@ -47,12 +47,15 @@ ul.column.col7 li{
     width: 13%;
     margin-right: 1.5%;
     float: left;
-  }
-  ul.column.col7 li:nth-child(7n){
+}
+ul.column.col7 li:nth-child(7n){
     margin-right: 0;
-  }
-  .ttl-line {
+}
+.ttl-line {
     border-bottom: solid 1px #2d2e74;
 
-  }
-  
+}
+
+p{
+    
+}
