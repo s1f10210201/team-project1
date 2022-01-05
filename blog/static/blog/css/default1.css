@@ -1,14 +1,23 @@
 body {
     font-family: sans-serif;
-    background-color: rgb(137, 181, 231);
+    
     margin: 40px 100px 40px 100px;
+    
 }
 
-h1 {
+h1.home{
+    padding: 30px 50px 30px 50px;
     border-bottom: solid 1px #2d2e74;
+    background-color: rgb(179, 212, 250);
     text-align: center;
 }
 
+h1.unhome {
+    padding: 30px 50px 30px 50px;
+    border-bottom: solid 1px #2d2e74;
+    text-align: left;
+    background-color: rgb(179, 212, 250);
+}
 
 #header {
     background-image: url("https://cdn-ak2.f.st-hatena.com/images/fotolife/m/mikimiho2013/20010318/20010318192050.jpg");
@@ -25,7 +34,7 @@ h1 {
     margin: 10px;
     padding: 10px;
     border: solid 2px#666666;
-    width: 40%;
+    width: 20%;
 }
 
 #textInput {
@@ -42,8 +51,11 @@ h1 {
 }
 
 h2 {
-    padding: 0px 10px 0px 10px;
+    padding: 10px 20px 10px 20px;
+    margin-right: 500px;
     border-left: solid 4px #17194c;
+    background-color: rgb(179, 212, 250);
+    
 }
 ul.column.col7 li{
     width: 13%;
@@ -72,4 +84,9 @@ li {
 .column-text-ttl-center {
     text-align: right;
     font-size: 50%;
+}
+
+label {
+    margin-top: 10px;
+    background-color: rgb(179, 212, 250);
 }

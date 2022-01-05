@@ -9,9 +9,9 @@
   </head>
   <body>
     <div id="header">
-      <img src="{% static 'blog/img/小見出しを追加.png' %}" alt="Logo">
+      <img src="{% static 'blog/img/小見出しを追加 (1).png' %}" alt="Logo">
     </div>
-    <h1>編集</h1>
+    <h1 class="unhome">編集</h1>
     <form action="{% url 'update' article.id %}" method="post">
       {% csrf_token %}
       <div>
@@ -21,7 +21,7 @@
       </div>
       <div>
         <label for="textInput">感想</label><br>
-        <textarea id="textInput" name="text" rows="3" placeholder="感想を入力してください">{{ article.body }}</textarea>
+        <textarea id="textInput" name="text" rows="10" placeholder="感想を入力してください">{{ article.body }}</textarea>
       </div>
       <div>
         <button type="submit">送信</button>

@@ -9,9 +9,9 @@
   </head>
   <body>
     <div id="header">
-      <img src="{% static 'blog/img/小見出しを追加.png' %}" alt="Logo">
+      <img src="{% static 'blog/img/小見出しを追加 (1).png' %}" alt="Logo">
     </div>
-    <h1>コメントや感想を入力</h1>
+    <h1 class="unhome">コメント</h1>
     <h2>タイトル: {{ article.title }}</h2>
     <small>投稿日時:{{ article.posted_at }}</small>
     <div>
@@ -19,11 +19,10 @@
     </div>
     
     <h2>コメント</h2>
-    <form action="{% url 'detail' article.id %}" method="post" placeholder="コメントを入力してください">
+    <form action="{% url 'detail' article.id %}" method="post">
       {% csrf_token %}
       <div>
-        <label for="textInput">↓に記入</label><br>
-        <textarea id="textInput" name="text" rows="3"></textarea>
+        <textarea id="textInput" name="text" rows="10" placeholder="コメントを入力してください"></textarea>
       </div>
       <div>
         <button type="submit">送信</button>
