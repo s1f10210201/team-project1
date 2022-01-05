@@ -14,8 +14,11 @@
     </div>
 
 
-    <h1>　　----------------------------------東洋大学学食レビュー---------------------------------</h1>
-    <p>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　東洋大学学食リスト                        </p>
+
+    <h1>----------------------------------東洋大学学食レビュー---------------------------------</h1>
+    <p>                        東洋大学学食リスト                        </p>
+
+ 
     <form action="{% url 'index' %}" method="post">
     <div class="box-cla_foods">
       <ul class="column col7 sp2 clearfix">
@@ -23,7 +26,7 @@
           <a href="/recipe/cla_foods/niku/01.html">
             <div class="img-mask">
               <figure>
-                <img src="{% static 'blog/img/iniad (1).png' %}">
+                <img src="{% static 'blog/img/yurinchi1.jpg' %}">
               </figure>
             </div>
             <p class="column-text-ttl-center">名前</p>
@@ -33,7 +36,7 @@
           <a href="/recipe/cla_foods/niku/02.html">
             <div class="img-mask">
               <figure>
-                <img src="{% static 'blog/img/iniad (1).png' %}">
+                <img src="{% static 'blog/img/cheeseteppan1.jpg' %}">
               </figure>
             </div>
             <p class="column-text-ttl-center">名前</p>
@@ -177,10 +180,7 @@
     </form>
     <br>
 
-    <div>
-  	  <a href="{% url 'index' %}?sort=date">Sort by Date</a> | 
-      <a href="{% url 'index' %}?sort=like">Sort by Like</a>
-	  </div>
+    
     
     {% if articles %}
     {% for article in articles %}
