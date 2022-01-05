@@ -27,6 +27,24 @@ def index(request):
     
     return render(request, 'blog/index.html')
 
+def hello(request):
+    messages = ['Great Fortune!', 'Small Fortune', 'Bad Fortune..']
+    fortune = random.randint(0, 2)
+    isGreatFortune = (fortune == 0)
+    fortuneMessage = messages[fortune]
+
+    data = {
+        'name' : 'Alice', 
+        'weather' : 'CLOUDY',
+        'weather_detail' : ['Temperature: 23℃', 'Humidity: 40%', 'Wind: 5m/s'],
+        'isGreatFortune' : isGreatFortune,
+        'fortune' : fortuneMessage,
+    }
+    return render(request, 'blog/hello.html', data)
+
+def redirect_test(request):
+    return redirect(hello)
+
 def detail(request, article_id):
     try:
         article = Article.objects.get(pk=article_id)
