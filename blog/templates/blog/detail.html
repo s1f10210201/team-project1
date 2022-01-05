@@ -19,7 +19,7 @@
     </div>
     
     <h2>コメント</h2>
-    <form action="{% url 'detail' article.id %}" method="post">
+    <form action="{% url 'detail' article.id %}" method="post" placeholder="コメントを入力してください">
       {% csrf_token %}
       <div>
         <label for="textInput">↓に記入</label><br>
