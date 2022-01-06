@@ -12,7 +12,7 @@
   </head>
   <body>
     <div id="header">
-      <img src="{% static 'blog/img/小見出しを追加 (1).png' %}" alt="Logo">
+      <img src="{% static 'blog/img/小見出しを追加 (1).png' %}" style="display: block; margin: auto;" alt="Logo">
     </div>
 
 
