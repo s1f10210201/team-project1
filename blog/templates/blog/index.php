@@ -11,8 +11,8 @@
     <script type="text/javascript" src="{% static 'blog/js/index.js' %}" ></script>
   </head>
   <body>
-    <div id="header">
-      <img src="{% static 'blog/img/小見出しを追加 (1).png' %}" style="display: block; margin: auto;" alt="Logo">
+    <div id="header" style="text-align: center">
+      <img src="{% static 'blog/img/小見出しを追加 (1).png' %}" alt="Logo">
     </div>
 
 
